@@ -45,7 +45,6 @@ conda list
 import numpy as np
 import pandas as pd
 import scipy
-import django
 import matplotlib.pyplot as plt
 """
 # not to self: last last module update 18/07/2026
