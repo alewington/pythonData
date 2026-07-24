@@ -4,8 +4,16 @@
 # support for large, multi-dimensional arrays and matrices, along with a
 # collection of mathematical functions to operate on these arrays.
 
+# It can be up to 50 times faster than traditional Python lists for numerical
+# operations, making it a popular choice for data scientists and researchers.
 # It is widely used in data analysis, scientific computing, and machine
 # learning due to its efficiency and ease of use.
+
+# Partially taken from https://numpy.org/doc/stable/user/whatisnumpy.html
+
+# Website: https://numpy.org
+# Documentation: https://numpy.org/doc
+# github: https://github.com/numpy/numpy
 
 # To install numpy, you can use either conda or pip. Here are the commands for
 # both:
