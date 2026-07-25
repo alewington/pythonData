@@ -34,10 +34,18 @@
 # Please see Python Basics for a refresher on Python programming concepts.
 
 # Ensure you have the modules and packages installed in your environment.
+
 # You can check the installed packages by running:
 """bash
 conda list
 """
+# to view the list of installed packages in your conda environment.
+
+# You can also use:
+"""bash
+pip list
+"""
+# to view the list of installed packages in your pip environment.
 
 # and can import the necessary libraries in your Python script as follows when
 # needed (not all at once):
@@ -46,5 +54,10 @@ import numpy as np
 import pandas as pd
 import scipy
 import matplotlib.pyplot as plt
+import openpyxl
 """
-# not to self: last last module update 18/07/2026
+
+# To install the packacges need can be found in the individual sections at the
+# first lesson called "main.py".
+
+# not to self: last last module update 25/07/2026
