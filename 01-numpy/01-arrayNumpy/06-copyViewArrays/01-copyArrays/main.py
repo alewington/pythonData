@@ -8,10 +8,10 @@
 import numpy as np
 
 # Create an array
-original_array = np.array([1, 2, 3, 4, 5])
+original_array: np.ndarray = np.array([1, 2, 3, 4, 5])
 
 # Create a copy of the array
-copied_array = original_array.copy()
+copied_array: np.ndarray = original_array.copy()
 
 # Modify the copied array
 copied_array[0] = 10

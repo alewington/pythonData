@@ -5,7 +5,7 @@
 
 import numpy as np
 
-list_of_nums = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
+list_of_nums: np.ndarray = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 
 # Accessing elements using positive indices
 print("Accessing elements using positive indices:")

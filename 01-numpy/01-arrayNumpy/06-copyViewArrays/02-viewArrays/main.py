@@ -8,9 +8,9 @@
 import numpy as np
 
 # Create an array
-original_array = np.array([1, 2, 3, 4, 5])
+original_array: np.ndarray = np.array([1, 2, 3, 4, 5])
 # Create a view of the array
-view_array = original_array.view()
+view_array: np.ndarray = original_array.view()
 
 # Modify the view array
 view_array[0] = 10

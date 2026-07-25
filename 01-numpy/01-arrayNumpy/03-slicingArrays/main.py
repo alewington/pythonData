@@ -8,7 +8,7 @@
 import numpy as np
 
 # Create a 1D array
-array_1d = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+array_1d: np.ndarray = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 print(array_1d)  # Output: [ 1  2  3  4  5  6  7  8  9 10]
 
 print("Slicing the array")

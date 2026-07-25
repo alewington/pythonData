@@ -17,7 +17,7 @@ import numpy as np
 # the np prefix when calling numpy functions, which makes your code more
 # readable and easier to understand.
 
-num_array = np.array([1, 2, 3, 4, 5])
+num_array: np.ndarray = np.array([1, 2, 3, 4, 5])
 
 print(num_array)  # Output: [1 2 3 4 5]
 

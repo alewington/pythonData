@@ -7,10 +7,10 @@
 import numpy as np
 
 # Create a 1D array
-original_array = np.array([10, 20, 30, 40, 50, 60])
+original_array: np.ndarray = np.array([10, 20, 30, 40, 50, 60])
 
 # Search for the index of a specific element using `np.where()`
-index = np.where(original_array == 40)
+index: tuple[np.ndarray, ...] = np.where(original_array == 40)
 print(index)
 
 # output:
@@ -24,7 +24,7 @@ print(index)
 # Other examples
 
 # Search for elements greater than 30
-indices = np.where(original_array > 30)
+indices: tuple[np.ndarray, ...] = np.where(original_array > 30)
 print(indices)
 
 # output:
@@ -37,7 +37,7 @@ print(indices)
 # array remains unchanged.
 
 # Using the values from indices
-values = original_array[indices]
+values: np.ndarray = original_array[indices]
 # this is a filtering operation using the indices obtained from the search
 print(values)
 

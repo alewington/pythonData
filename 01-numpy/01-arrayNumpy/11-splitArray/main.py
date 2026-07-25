@@ -6,10 +6,10 @@
 import numpy as np
 
 # Create a 1D array
-original_array = np.array([1, 2, 3, 4, 5, 6])
+original_array: np.ndarray = np.array([1, 2, 3, 4, 5, 6])
 
 # Split the array into 3 equal parts using `np.array_split()`
-split_array = np.array_split(original_array, 3)
+split_array: list[np.ndarray] = np.array_split(original_array, 3)
 print(split_array)
 # output:
 # [array([1, 2]), array([3, 4]), array([5, 6])]

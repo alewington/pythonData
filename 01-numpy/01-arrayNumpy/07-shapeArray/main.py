@@ -7,7 +7,7 @@
 import numpy as np
 
 # Create a 2D array
-original_array = np.array([[1, 2, 3], [4, 5, 6]])
+original_array: np.ndarray = np.array([[1, 2, 3], [4, 5, 6]])
 
 # output the original array shape.
 print(original_array.shape)

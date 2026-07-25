@@ -5,9 +5,9 @@
 import numpy as np
 
 # Create a 1D array
-original_array = np.array([10, 20, 30, 40, 50, 60])
+original_array: np.ndarray = np.array([10, 20, 30, 40, 50, 60])
 # Filter elements greater than 30
-filtered_array = original_array[original_array > 30]
+filtered_array: np.ndarray = original_array[original_array > 30]
 print(filtered_array)
 # output:
 # [40 50 60]

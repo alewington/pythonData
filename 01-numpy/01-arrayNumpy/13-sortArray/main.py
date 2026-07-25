@@ -6,13 +6,13 @@
 import numpy as np
 
 # Create a 1D array
-original_array = np.array([5, 2, 9, 1, 5, 6])
+original_array: np.ndarray = np.array([5, 2, 9, 1, 5, 6])
 print("Original array:", original_array)
 # output:
 # Original array: [5 2 9 1 5 6]
 
 # Sort the array in ascending order
-sorted_array = np.sort(original_array)
+sorted_array: np.ndarray = np.sort(original_array)
 print(sorted_array)
 # output:
 # [1 2 5 5 6 9]

@@ -6,11 +6,11 @@
 import numpy as np
 
 # Create two 1D arrays
-array1 = np.array([1, 2, 3])
-array2 = np.array([4, 5, 6])
+array1: np.ndarray = np.array([1, 2, 3])
+array2: np.ndarray = np.array([4, 5, 6])
 
 # Join the two arrays using `np.concatenate()`
-joined_array = np.concatenate((array1, array2))
+joined_array: np.ndarray = np.concatenate((array1, array2))
 print(joined_array)
 
 # output:
@@ -23,7 +23,7 @@ print(joined_array)
 
 
 # join as [[1, 4], [2, 5], [3, 6]]
-joined_array2 = np.column_stack((array1, array2))
+joined_array2: np.ndarray = np.column_stack((array1, array2))
 print(joined_array2)
 # output:
 # [[1 4]

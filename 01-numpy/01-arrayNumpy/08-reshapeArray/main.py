@@ -7,10 +7,10 @@
 import numpy as np
 
 # Create a 1D array
-original_array = np.array([1, 2, 3, 4, 5, 6])
+original_array: np.ndarray = np.array([1, 2, 3, 4, 5, 6])
 
 # Reshape the array to a 2D array with 2 rows and 3 columns
-reshaped_array = original_array.reshape(2, 3)
+reshaped_array: np.ndarray = original_array.reshape(2, 3)
 
 print(reshaped_array)
 # output:
@@ -23,7 +23,7 @@ print(reshaped_array)
 # 6 elements into a 2D array with 2 rows and 3 columns. The original array
 # remains unchanged.
 
-reshaped_array2 = original_array.reshape(3, 2)
+reshaped_array2: np.ndarray = original_array.reshape(3, 2)
 print(reshaped_array2)
 # output:
 # [[1 2]
