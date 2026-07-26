@@ -51,6 +51,7 @@ pip list
 # needed (not all at once):
 """python
 import numpy as np
+import seaborn as sns
 import pandas as pd
 import scipy
 import matplotlib.pyplot as plt
@@ -60,4 +61,4 @@ import openpyxl
 # To install the packacges need can be found in the individual sections at the
 # first lesson called "main.py".
 
-# not to self: last last module update 25/07/2026
+# not to self: last last module update 26/07/2026
