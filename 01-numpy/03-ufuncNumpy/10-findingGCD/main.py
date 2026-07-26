@@ -4,6 +4,7 @@
 # The Greatest Common Divisor (GCD) of two integers is the largest positive
 # integer that divides both of the given integers without leaving a remainder.
 # For example, the GCD of 8 and 12 is 4.
+
 import numpy as np
 
 # Create two 1-dimensional arrays

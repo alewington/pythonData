@@ -32,7 +32,7 @@ print("Logarithm Base 2 (shorthand):", log_base_2_shorthand)
 
 # These operations are performed element-wise, meaning that each element in
 # the array is transformed according to the specified logarithmic function.
-# You can log() negative numbers or zero, but it will result in
+# You cannot log() negative numbers or zero, but it will result in
 # NaN (Not a Number) or -inf (negative infinity) values, as logarithms are
 # undefined for these inputs.
 
@@ -53,6 +53,21 @@ print("Logarithm Base 2 (shorthand):", log_base_2_shorthand)
 
 
 def binary_search(arr, target):
+    """
+    Perform binary search on a sorted array to find the index of the target
+    value. If the target is not found, return -1.
+
+    Parameters:
+        arr (numpy.ndarray): A sorted 1-dimensional array to search.
+        target (int or float): The value to search for in the array.
+    Returns:
+        int: The index of the target value if found, otherwise -1.
+    Example:
+        >>> arr = np.array([1, 10, 100, 1000, 10000])
+        >>> target = 1000
+        >>> binary_search(arr, target)
+        3
+    """
     left, right = 0, len(arr) - 1
     while left <= right:
         mid = left + (right - left) // 2

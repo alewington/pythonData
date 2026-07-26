@@ -1,9 +1,8 @@
 # Trigonometric Functions in NumPy
 
-# NumPy provides a set of universal functions (ufuncs) that allow you to
-# perform element-wise operations on arrays. These functions are optimised
-# for performance and can handle broadcasting, which allows you to perform
-# operations on arrays of different shapes.
+# Trigonometric functions are mathematical functions that relate the angles of
+# a triangle to the lengths of its sides. In NumPy, you can use various
+# trigonometric functions to perform calculations on arrays of angles.
 
 import numpy as np
 
