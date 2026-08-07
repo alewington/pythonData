@@ -63,3 +63,9 @@ sys.stdout.flush()
 # effectively use this code. Make sure to have the required libraries
 # installed and the virtual environment activated before running the code.
 # Please see Python Basics for a refresher on Python programming concepts.
+#
+
+# Goto:
+# https://matplotlib.org/stable/users/getting_started/
+# https://matplotlib.org/cheatsheets/
+# https://matplotlib.org/stable/plot_types/index.html
