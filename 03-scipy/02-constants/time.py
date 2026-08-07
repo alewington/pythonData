@@ -15,4 +15,4 @@ print("Minute:", constants.minute)  # output: 60.0
 print("Hour:", constants.hour)  # output: 3600.0
 print("Day:", constants.day)  # output: 86400.0
 print("Week:", constants.week)  # output: 604800.0
-print("Year:", constants.year)  # output: 31556952.0
+print("Year:", constants.year)  # output: 31536000.0
