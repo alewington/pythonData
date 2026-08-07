@@ -43,34 +43,41 @@ print(constants.atto)   # 1e-18
 
 # they allow you to convert between different units of measurement, such as
 # length, mass, time, and more. For example:
+print("Sci units for length:")
 print("1 meter in centimeters:", 1 * constants.centi)
+print("Sci units for mass:")
 print("1 kilogram in grams:", 1 * constants.kilo)
 
 # The `scipy.constants` module also includes a variety of time-related
 # constants, such as the number of seconds in a minute, hour, day, and year.
 # These constants can be useful for time conversions and calculations in
 # various applications. For example:
+print("Sci units for time:")
 print("1 minute in seconds:", 1 * constants.minute)
 print("1 hour in seconds:", 1 * constants.hour)
 
 # Computer Storage Units (sci units base 10):
+print("Sci units for computer storage:")
 print("1 kilobyte in bytes:", 1 * constants.kilo)
 print("1 megabyte in bytes:", 1 * constants.mega)
 print("1 gigabyte in bytes:", 1 * constants.giga)
 
 # Computer Storage Units (binary units in IEEE 1541 standard base 2):
+print("IEEE 1541 standard binary units for computer storage:")
 print("1 kibibyte in bytes:", 1 * constants.kibi)
 print("1 mebibyte in bytes:", 1 * constants.mebi)
 print("1 gibibyte in bytes:", 1 * constants.gibi)
 
 # CPU Speed Units (sci units):
+print("Sci units for CPU operations per second:")
 print("1 kilohertz in hertz:", 1 * constants.kilo)
 print("1 megahertz in hertz:", 1 * constants.mega)
-print("1 gigahertz in hertz:", 1 * constants.giga)
+print("5 gigahertz in hertz:", 5.0 * constants.giga)
 
 # teraflops (TFLOPS) is a measure of a computer's performance, especially in
 # fields of scientific calculations that require floating-point calculations.
 # It represents one trillion (10^12) floating-point operations per second.
+print("Sci units for CPU speed:")
 print("1 teraflop in FLOPS:", 1 * constants.tera)
 
 # speed in sci units:
@@ -82,4 +89,4 @@ print("1 knot in meters per second:", 1 * constants.knot)
 
 # measurements in sci units:
 print("1 inch in meters:", 1 * constants.inch)
-print("1 cm in millimeters:", 1 * constants.centi * constants.milli)
+print("1 cm in millimeters:", 1 * constants.centi / constants.milli)
