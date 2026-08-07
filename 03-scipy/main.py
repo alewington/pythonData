@@ -41,3 +41,7 @@ print("Inverse of the matrix:\n", inverse_matrix)
 # The code is broken into sections for better understanding and organization.
 # Each section will cover different aspects of data analysis, including data
 # manipulation, visualization, and statistical analysis.
+
+# Goto:
+# https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide
+# https://scipy.github.io/devdocs/reference/index.html#guidelines-for-importing-functions-from-scipy
