@@ -5,6 +5,9 @@
 # and analyze structured data. It is widely used in data analysis, finance,
 # and scientific computing due to its efficiency and ease of use.
 
+# https://pandas.pydata.org/docs/user_guide/index.html
+# https://github.com/pandas-dev/pandas
+
 # To install pandas, you can use either conda or pip. Here are the commands for
 # both:
 
