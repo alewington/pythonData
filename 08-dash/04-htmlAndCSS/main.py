@@ -27,53 +27,54 @@ app = Dash(external_stylesheets=external_stylesheets)
 # App layout
 app.layout = [
     html.Div(
-             className='row',
-             children='Example App with Data, Graph, and Controls',
-             style={'textAlign': 'center',
-                    'color': 'blue',
-                    'fontSize': 30}
-             ),
-
-    html.Div(className='row',
-             children=[dcc.RadioItems(
-                options=['pop', 'lifeExp', 'gdpPercap'],
-                value='lifeExp',
-                inline=True,
-                id='my-radio-buttons-final'
-                )]
+        className='row',
+        children='Example App with Data, Graph, and Controls',
+        style={'textAlign': 'center',
+               'color': 'blue',
+               'fontSize': 30}
              ),
 
     html.Div(
         className='row',
-        children=[
-            html.Div(
-                className='six columns',
-                children=[dag.AgGrid(
-                    rowData=df.to_dict('records'),
-                    columnDefs=[{"field": i} for i in df.columns]
-                )]
-                ),
-            html.Div(
-                className='six columns',
-                children=[dcc.Graph(
-                    figure={},
-                    id='histo-chart-final'
-                    )]
-                )
-            ])
+        children=[dcc.RadioItems(
+          options=['pop', 'lifeExp', 'gdpPercap'],
+          value='lifeExp',
+          inline=True,
+          id='my-radio-buttons-final'
+        )]
+    ),
+
+    html.Div(
+      className='row',
+      children=[
+        html.Div(
+          className='six columns',
+          children=[dag.AgGrid(
+            rowData=df.to_dict('records'),
+            columnDefs=[{"field": i} for i in df.columns]
+            )]
+          ),
+        html.Div(
+          className='six columns',
+          children=[dcc.Graph(
+            figure={},
+            id='histo-chart-final'
+            )]
+        )]
+    )
 ]
 
 
 # Add controls to build the interaction
 @callback(
     Output(
-        component_id='histo-chart-final',
-        component_property='figure'
-        ),
+      component_id='histo-chart-final',
+      component_property='figure'
+    ),
     Input(
-        component_id='my-radio-buttons-final',
-        component_property='value'
-        )
+      component_id='my-radio-buttons-final',
+      component_property='value'
+    )
 )
 def update_graph(col_chosen):
     """ Update the graph based on the selected column.
