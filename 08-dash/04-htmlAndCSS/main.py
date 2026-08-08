@@ -18,9 +18,9 @@ df: pd.DataFrame = pd.read_csv(csv_location)
 
 # Call the CSS from an external source.
 css_path = ['https://codepen.io/chriddyp/pen/']
-css_sheet = ['bWLwgP.css']
+css_file = ['bWLwgP.css']
 
-external_stylesheets = [css_path[0] + css_sheet[0]]
+external_stylesheets = [css_path[0] + css_file[0]]
 
 app = Dash(external_stylesheets=external_stylesheets)
 
