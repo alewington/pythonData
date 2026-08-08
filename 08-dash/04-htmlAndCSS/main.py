@@ -29,11 +29,12 @@ app.layout = [
     html.Div(
         className='row',
         children='Example App with Data, Graph, and Controls',
-        style={'textAlign': 'center',
-               'color': 'blue',
-               'fontSize': 30}
-             ),
-
+        style={
+            'textAlign': 'center',
+            'color': 'blue',
+            'fontSize': 30
+            }
+    ),
     html.Div(
         className='row',
         children=[dcc.RadioItems(
@@ -43,7 +44,6 @@ app.layout = [
           id='my-radio-buttons-final'
         )]
     ),
-
     html.Div(
       className='row',
       children=[
@@ -53,7 +53,7 @@ app.layout = [
             rowData=df.to_dict('records'),
             columnDefs=[{"field": i} for i in df.columns]
             )]
-          ),
+        ),
         html.Div(
           className='six columns',
           children=[dcc.Graph(
