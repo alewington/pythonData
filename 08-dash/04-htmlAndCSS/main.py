@@ -58,7 +58,8 @@ app.layout = [
                 children=[dcc.Graph(
                     figure={},
                     id='histo-chart-final'
-                    )])
+                    )]
+                )
             ])
 ]
 
