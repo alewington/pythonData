@@ -34,7 +34,8 @@ app.layout = [
     html.Hr(),
     dcc.RadioItems(
                    options=['pop', 'lifeExp', 'gdpPercap'],
-                   value='lifeExp', id='controls-and-radio-item'
+                   value='lifeExp',
+                   id='controls-and-radio-item'
                    ),
     dag.AgGrid(
                 rowData=df.to_dict('records'),
