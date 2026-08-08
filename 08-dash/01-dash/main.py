@@ -31,7 +31,7 @@ csv_location = csv_path + csv_file
 
 df = pd.read_csv(csv_location)
 
-# Initialize the app
+# Initialise the app
 app = Dash()
 
 # App layout
