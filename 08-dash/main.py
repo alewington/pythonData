@@ -20,6 +20,12 @@
 
 # To initiate dash, run the following command in your terminal:
 # import dash
+# more likely to use:
+# from dash import Dash, html (plus other components as needed)
 
 # To run the Dash app, execute the following command in your terminal:
 # you will need the following packages installed: dash, pandas, plotly, flask.
+
+# Running the app will start a local server, and you can view the app in your
+# web browser at http://127.0.0.1:8050/ and the app.py you created will be
+# executed.

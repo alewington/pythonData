@@ -18,6 +18,10 @@ import pandas as pd
 # data on countries' GDP, life expectancy, and population over time.
 
 # Add file SALT here to manage the data source.
+# import os
+# base_dir = os.path.dirname(os.path.abspath(__file__))
+# file_path = os.path.join(base_dir, 'example.txt')
+
 csv_path = 'https://raw.githubusercontent.com/plotly/datasets/master/'
 csv_file = 'gapminder_unfiltered.csv'
 csv_location = csv_path + csv_file
@@ -28,7 +32,7 @@ app = Dash()
 
 # Requires Dash 2.17.0 or later
 app.layout = [
-    html.H1(children='Title of Dash App', style={'textAlign': 'center'}),
+    html.H1(children='Example of Dash', style={'textAlign': 'center'}),
     dcc.Dropdown(df.country.unique(), 'Canada', id='dropdown-selection'),
     dcc.Graph(id='graph-content')
 ]
