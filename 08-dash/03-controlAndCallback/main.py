@@ -30,34 +30,34 @@ app: Dash = Dash()
 
 # App layout
 app.layout = [
-    html.Div(children='My First App with Data, Graph, and Controls'),
+    html.Div(children='Example App with Data, Graph, and Controls'),
     html.Hr(),
     dcc.RadioItems(
-                   options=['pop', 'lifeExp', 'gdpPercap'],
-                   value='lifeExp',
-                   id='controls-and-radio-item'
-                   ),
+        options=['pop', 'lifeExp', 'gdpPercap'],
+        value='lifeExp',
+        id='controls-and-radio-item'
+        ),
     dag.AgGrid(
-                rowData=df.to_dict('records'),
-                columnDefs=[{"field": i} for i in df.columns]
-              ),
+        rowData=df.to_dict('records'),
+        columnDefs=[{"field": i} for i in df.columns]
+        ),
     dcc.Graph(
-              figure={},
-              id='controls-and-graph'
-              )
+        figure={},
+        id='controls-and-graph'
+        )
 ]
 
 
 # Add controls to build the interaction
 @callback(
     Output(
-           component_id='controls-and-graph',
-           component_property='figure'
-           ),
+        component_id='controls-and-graph',
+        component_property='figure'
+        ),
     Input(
-           component_id='controls-and-radio-item',
-           component_property='value'
-           )
+        component_id='controls-and-radio-item',
+        component_property='value'
+        )
 )
 def update_graph(col_chosen):
     """Update the graph based on the selected column.
@@ -75,11 +75,11 @@ def update_graph(col_chosen):
         column for each continent.
     """
     fig = px.histogram(
-                       df,
-                       x='continent',
-                       y=col_chosen,
-                       histfunc='avg'
-                       )
+            df,
+            x='continent',
+            y=col_chosen,
+            histfunc='avg'
+            )
     return fig
 
 
