@@ -10,19 +10,19 @@ import pandas as pd
 import plotly.express as px
 
 # Call the data from a CSV file.
-csv_dest: str = 'https://'
-csv_path: str = 'raw.githubusercontent.com/plotly/datasets/master/'
-csv_file: str = 'gapminder2007'
-csv_type: str = '.csv'
-csv_location: str = csv_dest + csv_path + csv_file + csv_type
+csv_dest = 'https://'
+csv_path = 'raw.githubusercontent.com/plotly/datasets/master/'
+csv_file = 'gapminder2007'
+csv_type = '.csv'
+csv_location = [csv_dest + csv_path + csv_file + csv_type]
 
-df: pd.DataFrame = pd.read_csv(csv_location)
+df: pd.DataFrame = pd.read_csv(csv_location[0])
 
 css_dest = ['https://']
 css_path = ['codepen.io/chriddyp/pen/']
 css_file = ['bWLwgP']
 css_type = ['.css']
-external_stylesheets = [css_dest[0] + css_path[0] + css_file[0]]
+external_stylesheets = [css_dest[0] + css_path[0] + css_file[0] + css_type[0]]
 
 app = Dash(external_stylesheets=external_stylesheets)
 
