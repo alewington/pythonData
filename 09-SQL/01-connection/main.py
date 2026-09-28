@@ -15,3 +15,5 @@ mydb = sql_connector.connect_to_database()
 # test db connection
 if mydb.is_connected():
     print("Successfully connected to the database.")
+
+# Close the connection
